@@ -8,6 +8,7 @@ package practice13.ptra13;
 
 public class PTra13_08 {
 
+
 	/*
 	 * ★ common.Personクラスを継承して、common.Employeeクラスを作成してください
 	 *
@@ -17,5 +18,6 @@ public class PTra13_08 {
 	 * メソッド
 	 * 		各フィールドのアクセサ
 	 */
+
 
 }

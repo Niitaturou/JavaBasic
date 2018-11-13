@@ -1,13 +1,6 @@
-/*
- * PTra13_06.java
- *   作成	LIKEIT	2017
- *------------------------------------------------------------
- * Copyright(c) Rhizome Inc. All Rights Reserved.
- */
-package practice13.ptra13;
+package practice13.common;
 
-public class PTra13_06 {
-
+public class SuperHero extends Hero {
 
 	/*
 	 * ★ common.Heroクラスを継承した、common.SuperHeroクラスを作成してください
@@ -22,5 +15,18 @@ public class PTra13_06 {
 	 * 		equipmentのアクセサ
 	 */
 
+	private Item equipment;
+
+	public void setEquipment( Item equipment ) {
+		this.equipment = equipment;
+	}
+
+	public Item getEquipment() {
+		return this.equipment;
+	}
+
+	public int attack() {
+		return super.attack() + equipment.getAdditionalDamage();
+	}
 
 }
